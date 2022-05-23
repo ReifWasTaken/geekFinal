@@ -1,0 +1,31 @@
+
+@mixin tamImagnes ($width, $heigth){
+    
+    width: $width;
+    height: $heigth;
+    
+}
+
+@mixin tamTexto ($textoFAQ){
+
+    height: $textoFAQ;
+
+    @if $textoFAQ == 60vh{
+
+        .faq{
+            font-size: 20px;
+        }
+    }
+    @else if $textoFAQ == 80vh{
+
+        .faq{
+            font-size: 20px + 5px;
+        }
+    }
+    @else if $textoFAQ == 100vh{
+
+        .faq{
+            font-size: 20px + 10px;
+        }
+    }
+}
